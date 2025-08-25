@@ -530,26 +530,68 @@
         // Bible Characters Database
         const characters = {
             easy: [
-                { name: "ADAM", clue: "🌱 First man created by God<br>🍎 Lived in Garden of Eden<br>👩 Married to Eve" },
-                { name: "NOAH", clue: "🚢 Built the ark<br>🌊 Saved from the flood<br>🐘 Rescued all animals" },
-                { name: "MOSES", clue: "🌊 Parted the Red Sea<br>📜 Received Ten Commandments<br>🇪🇬 Led Israel from Egypt" },
-                { name: "DAVID", clue: "🎵 Shepherd and king<br>⚔️ Killed Goliath<br>🏰 King of Israel" },
-                { name: "SOLOMON", clue: "👑 Wisest king<br>🏛️ Built God's temple<br>💰 Very wealthy ruler" },
-                { name: "JONAH", clue: "🐟 Swallowed by great fish<br>🏃 Ran from God<br>🌊 Three days in belly" },
-                { name: "DANIEL", clue: "🦁 Lions' den survivor<br>🔮 Interpreted dreams<br>👑 Served kings" },
-                { name: "MARY", clue: "👶 Jesus' mother<br>👼 Visited by angel<br>✨ Virgin birth miracle" },
-                { name: "JESUS", clue: "✝️ Son of God<br>❤️ Died for our sins<br>⬆️ Rose from dead" },
-                { name: "PETER", clue: "🎣 Fisherman apostle<br>🌊 Walked on water<br>🗝️ Keys to kingdom" },
-                { name: "PAUL", clue: "✈️ Great missionary<br>📜 Wrote many letters<br>⚡ Damascus road vision" },
-                { name: "JOSEPH", clue: "🌈 Colorful coat owner<br>🔮 Dream interpreter<br>🇪🇬 Ruler in Egypt" },
-                { name: "ABRAHAM", clue: "⭐ Father of many nations<br>👴 Very old when son born<br>🔥 Almost sacrificed Isaac" },
-                { name: "ESTHER", clue: "👸 Beautiful queen<br>🛡️ Saved her people<br>👑 Married to king" },
-                { name: "RUTH", clue: "💕 Loyal daughter-in-law<br>🌾 Worked in fields<br>👰 Married Boaz" },
-                { name: "JOSHUA", clue: "⚔️ Warrior leader<br>🏰 Conquered Jericho<br>🗺️ Led into Promised Land" },
-                { name: "SAMSON", clue: "💪 Super strong man<br>✂️ Power in his hair<br>🏛️ Destroyed temple" },
-                { name: "ELIJAH", clue: "🔥 Called fire from heaven<br>🌧️ Stopped the rain<br>🏃 Ran very fast" },
-                { name: "JOHN", clue: "❤️ Disciple Jesus loved<br>📖 Wrote Revelation<br>🏝️ Lived on island" },
-                { name: "MATTHEW", clue: "💰 Tax collector apostle<br>📝 Wrote first gospel<br>👥 Followed Jesus" }
+                { name: "ADAM", clue: "🌱 First man created by God<br>🍎 Lived in Garden of Eden<br>👩 Married to Eve<br>🐍 Tempted by serpent<br>🚪 Cast out of paradise" },
+                { name: "NOAH", clue: "🚢 Built the ark<br>🌊 Saved from the flood<br>🐘 Rescued all animals<br>🌈 God gave him a rainbow<br>⛰️ Ark landed on Mount Ararat" },
+                { name: "MOSES", clue: "🌊 Parted the Red Sea<br>📜 Received Ten Commandments<br>🇪🇬 Led Israel from Egypt<br>🔥 Burning bush encounter<br>🪨 Struck rock for water" },
+                { name: "DAVID", clue: "🎵 Shepherd and king<br>⚔️ Killed Goliath<br>🏰 King of Israel<br>🎶 Wrote many Psalms<br>👑 Man after God's heart" },
+                { name: "SOLOMON", clue: "👑 Wisest king<br>🏛️ Built God's temple<br>💰 Very wealthy ruler<br>👶 Judged baby dispute<br>👸 Queen of Sheba visited" },
+                { name: "JONAH", clue: "🐟 Swallowed by great fish<br>🏃 Ran from God<br>🌊 Three days in belly<br>🌿 Sat under vine<br>🏙️ Preached to Nineveh" },
+                { name: "DANIEL", clue: "🦁 Lions' den survivor<br>🔮 Interpreted dreams<br>👑 Served kings<br>🔥 Friends in furnace<br>📖 Prophetic visions" },
+                { name: "MARY", clue: "👶 Jesus' mother<br>👼 Visited by angel<br>✨ Virgin birth miracle<br>⭐ Followed the star<br>🗡️ Sword pierced her soul" },
+                { name: "JESUS", clue: "✝️ Son of God<br>❤️ Died for our sins<br>⬆️ Rose from dead<br>🌊 Walked on water<br>🍞 Fed five thousand" },
+                { name: "PETER", clue: "🎣 Fisherman apostle<br>🌊 Walked on water<br>🗝️ Keys to kingdom<br>🐓 Denied Jesus three times<br>🪨 Rock of the church" },
+                { name: "PAUL", clue: "✈️ Great missionary<br>📜 Wrote many letters<br>⚡ Damascus road vision<br>🏛️ Preached in Athens<br>⛓️ Imprisoned for faith" },
+                { name: "JOSEPH", clue: "🌈 Colorful coat owner<br>🔮 Dream interpreter<br>🇪🇬 Ruler in Egypt<br>👥 Sold by brothers<br>🌾 Saved from famine" },
+                { name: "ABRAHAM", clue: "⭐ Father of many nations<br>👴 Very old when son born<br>🔥 Almost sacrificed Isaac<br>🏕️ Left his homeland<br>👼 Entertained angels" },
+                { name: "ESTHER", clue: "👸 Beautiful queen<br>🛡️ Saved her people<br>👑 Married to king<br>🎭 Hid her identity<br>🍽️ Brave banquet plan" },
+                { name: "RUTH", clue: "💕 Loyal daughter-in-law<br>🌾 Worked in fields<br>👰 Married Boaz<br>👵 Cared for Naomi<br>🏠 Said 'Your people, my people'" },
+                { name: "JOSHUA", clue: "⚔️ Warrior leader<br>🏰 Conquered Jericho<br>🗺️ Led into Promised Land<br>🎺 Walls fell at trumpet sound<br>☀️ Made sun stand still" },
+                { name: "SAMSON", clue: "💪 Super strong man<br>✂️ Power in his hair<br>🏛️ Destroyed temple<br>🦁 Killed lion with hands<br>💔 Betrayed by Delilah" },
+                { name: "ELIJAH", clue: "🔥 Called fire from heaven<br>🌧️ Stopped the rain<br>🏃 Ran very fast<br>🌪️ Taken up in whirlwind<br>⚡ Defeated Baal prophets" },
+                { name: "JOHN", clue: "❤️ Disciple Jesus loved<br>📖 Wrote Revelation<br>🏝️ Lived on island<br>⚡ Son of Thunder<br>🦅 Eagle symbol" },
+                { name: "MATTHEW", clue: "💰 Tax collector apostle<br>📝 Wrote first gospel<br>👥 Followed Jesus<br>🍽️ Threw big dinner party<br>📊 Good with numbers" }
+            ],
+            easyExtended: [
+                { name: "EVE", clue: "👩 First woman created<br>🍎 Ate forbidden fruit<br>🐍 Tempted by serpent<br>🌿 Mother of all living<br>😔 Hid from God in garden" },
+                { name: "CAIN", clue: "👨‍🌾 First murderer<br>😡 Killed his brother<br>🌾 Offered crops to God<br>❓ Asked 'Am I my brother's keeper?'<br>🏃 Became wanderer on earth" },
+                { name: "ABEL", clue: "🐑 Shepherd brother<br>💀 Killed by Cain<br>🔥 God accepted his offering<br>🩸 His blood cried out<br>😇 Righteous man" },
+                { name: "ISAAC", clue: "👶 Son of promise<br>🔥 Almost sacrificed<br>👴 Born to elderly parents<br>😂 Name means 'laughter'<br>💍 Married Rebecca" },
+                { name: "JACOB", clue: "👥 Had twelve sons<br>🪜 Dreamed of ladder<br>🥊 Wrestled with angel<br>👶 Born holding brother's heel<br>🇮🇱 Name changed to Israel" },
+                { name: "SARAH", clue: "👵 Abraham's wife<br>😂 Laughed at God's promise<br>👶 Had baby at 90<br>🏕️ Beautiful princess<br>⚰️ Buried in Hebron" },
+                { name: "RACHEL", clue: "💕 Jacob's beloved wife<br>🐑 Met at the well<br>👶 Mother of Joseph<br>💧 Jacob worked 14 years for her<br>😢 Died giving birth to Benjamin" },
+                { name: "LEAH", clue: "👀 Weak eyes<br>👰 Jacob's first wife<br>👶 Mother of six sons<br>💔 Less loved than Rachel<br>👑 Mother of Judah" },
+                { name: "AARON", clue: "🎤 Moses' spokesman<br>⚡ First high priest<br>🌿 His rod budded<br>🐄 Made golden calf<br>👥 Moses' older brother" },
+                { name: "MIRIAM", clue: "👶 Watched baby Moses<br>🥁 Led victory dance<br>☁️ Became leprous briefly<br>👧 Prophetess and leader<br>💧 Well followed her" },
+                { name: "CALEB", clue: "👁️ Faithful spy<br>🍇 Brought back grapes<br>🏔️ Conquered mountains at 85<br>💪 Had different spirit<br>🏠 Inherited Hebron" },
+                { name: "GIDEON", clue: "⚔️ Led 300 warriors<br>🕯️ Used torches and jars<br>🐑 Asked for fleece sign<br>🌾 Threshing wheat in hiding<br>👼 Angel called him mighty warrior" },
+                { name: "BOAZ", clue: "🌾 Kind landowner<br>💑 Married Ruth<br>🍞 Shared his bread<br>👑 Ancestor of David<br>🛡️ Kinsman redeemer" },
+                { name: "HANNAH", clue: "👶 Prayed for a son<br>😭 Wept at the temple<br>👨‍⚖️ Mother of Samuel<br>🙏 Made a vow to God<br>🎵 Sang song of praise" },
+                { name: "SAMUEL", clue: "👂 Heard God's voice<br>👨‍⚖️ Last judge of Israel<br>👑 Anointed kings<br>👶 Served in temple as child<br>⚡ Prophet and priest" },
+                { name: "SAUL", clue: "👑 First king of Israel<br>📏 Head taller than others<br>⚔️ Disobeyed God<br>🎯 Threw spears at David<br>😈 Tormented by evil spirit" },
+                { name: "GOLIATH", clue: "👹 Giant Philistine warrior<br>🪨 Killed by small stone<br>⚔️ Challenged Israel's army<br>📏 Over 9 feet tall<br>🛡️ Wore heavy armor" },
+                { name: "JONATHAN", clue: "🏹 Prince and warrior<br>💕 David's best friend<br>🍯 Found honey in forest<br>⚔️ Brave fighter<br>💔 Died with his father" },
+                { name: "ELISHA", clue: "👨‍⚕️ Healing prophet<br>🐻 Called bears on bullies<br>🥄 Made axe head float<br>👨‍🦲 Bald prophet<br>💧 Healed poisoned water" },
+                { name: "NAAMAN", clue: "👨‍⚔️ Syrian army commander<br>🛁 Washed seven times<br>🦠 Healed of leprosy<br>🌊 Dipped in Jordan River<br>😡 Got angry at simple cure" },
+                { name: "EZRA", clue: "📚 Priest and scribe<br>📖 Read the Law publicly<br>🏛️ Rebuilt worship<br>👥 Led people back from exile<br>😭 Wept over mixed marriages" },
+                { name: "NEHEMIAH", clue: "🧱 Rebuilt Jerusalem's walls<br>🍷 King's cupbearer<br>😢 Wept over ruins<br>⚔️ Workers held swords<br>🙏 Man of prayer" },
+                { name: "JOB", clue: "😢 Suffered great losses<br>👹 Satan tested him<br>💪 Remained faithful<br>🐄 Lost all his animals<br>👶 Lost ten children" },
+                { name: "ISAIAH", clue: "📢 Major prophet<br>👶 Prophesied virgin birth<br>🔥 Lips touched by coal<br>👼 Saw God on throne<br>🕊️ Spoke of suffering servant" },
+                { name: "JEREMIAH", clue: "😭 The weeping prophet<br>🏺 Smashed pottery<br>📜 Warned of destruction<br>🕳️ Thrown into pit<br>💔 Called to not marry" },
+                { name: "EZEKIEL", clue: "👁️ Saw strange visions<br>🦴 Valley of dry bones<br>🛞 Wheels within wheels<br>📖 Acted out prophecies<br>🏛️ Saw new temple" },
+                { name: "SHADRACH", clue: "🔥 Survived fiery furnace<br>👑 Refused to bow<br>👥 One of three friends<br>🍖 Ate vegetables instead<br>📚 Wise counselor" },
+                { name: "MESHACH", clue: "🔥 Thrown into flames<br>👑 Wouldn't worship statue<br>👥 Daniel's friend<br>🧠 Ten times wiser<br>🙏 Faithful to God" },
+                { name: "ABEDNEGO", clue: "🔥 Walked in fire unharmed<br>👑 Defied king's order<br>👥 Third faithful friend<br>💪 Promoted by king<br>👼 Fourth man in fire" },
+                { name: "ELIZABETH", clue: "👵 John Baptist's mother<br>👶 Pregnant in old age<br>👼 Visited by Mary<br>👨‍⚖️ Married to Zechariah<br>🤐 Husband struck mute" },
+                { name: "JOHN BAPTIST", clue: "🌊 Baptized people<br>🦗 Ate locusts and honey<br>✂️ Lost his head<br>🏜️ Preached in wilderness<br>🕊️ Saw Spirit descend" },
+                { name: "ANDREW", clue: "🎣 Fisherman apostle<br>👥 Peter's brother<br>👶 Found boy with loaves<br>👨‍💼 Brought people to Jesus<br>✝️ Crucified on X-shaped cross" },
+                { name: "THOMAS", clue: "🤔 Doubting apostle<br>✋ Wanted to touch wounds<br>🙏 Called Jesus 'My Lord'<br>👥 One of the twelve<br>🇮🇳 Preached to India" },
+                { name: "JAMES", clue: "⚡ Son of Thunder<br>🎣 Fisherman apostle<br>⚔️ First martyred apostle<br>👥 John's brother<br>⛰️ At the transfiguration" },
+                { name: "PHILIP", clue: "👨‍🏫 Brought Nathanael to Jesus<br>💰 Asked about buying bread<br>🛣️ Met Ethiopian on road<br>🏛️ From Bethsaida<br>🔍 Showed Jesus to Greeks" },
+                { name: "MARY MAGDALENE", clue: "👻 Had seven demons<br>✝️ Stayed at the cross<br>🌅 First to see risen Jesus<br>💐 Anointed Jesus' feet<br>👥 Supported Jesus' ministry" },
+                { name: "MARTHA", clue: "🍽️ Busy serving dinner<br>🏠 Welcomed Jesus home<br>👩‍👧‍👦 Lazarus' sister<br>😤 Complained about Mary<br>🙏 Believed Jesus is Christ" },
+                { name: "MARY OF BETHANY", clue: "👂 Sat at Jesus' feet<br>💐 Poured perfume on feet<br>👩‍👧‍👦 Lazarus' sister<br>💰 Used expensive oil<br>👂 Chose better part" },
+                { name: "LAZARUS", clue: "💀 Died and came back<br>🪨 Came out of tomb<br>👨‍👧‍👦 Mary and Martha's brother<br>🤢 Was sick for four days<br>👥 Many believed because of him" },
+                { name: "ZACCHAEUS", clue: "🌳 Climbed sycamore tree<br>💰 Rich tax collector<br>📏 Very short man<br>🏠 Jesus came to his house<br>💸 Gave half to the poor" }
             ],
             hard: [
                 { name: "MELCHIZEDEK", clue: "" },
@@ -619,7 +661,11 @@
             correctAnswers = [];
             skippedAnswers = [];
             
-            currentCharacters = shuffleArray(characters[selectedDifficulty]);
+            if (selectedDifficulty === 'easy') {
+                currentCharacters = shuffleArray([...characters.easy, ...characters.easyExtended]);
+            } else {
+                currentCharacters = shuffleArray(characters[selectedDifficulty]);
+            }
             
             showScreen('game');
             updateDisplay();
