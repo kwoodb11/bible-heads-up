@@ -1,4 +1,62 @@
-<!DOCTYPE html>
+// Bible Characters Database - JW-Accurate from "My Book of Bible Stories"
+        const characters = {
+            easy: [
+                { name: "ADAM", clue: "🌱 First man Jehovah created<br>🍎 Lived in Garden of Eden<br>👩 Married to Eve<br>🌿 Named all the animals<br>😔 Disobeyed Jehovah's command" },
+                { name: "EVE", clue: "👩 First woman Jehovah created<br>🍎 Ate forbidden fruit<br>🐍 Talked to a serpent<br>🌿 Mother of all people<br>👶 Had sons Cain and Abel" },
+                { name: "NOAH", clue: "🚢 Built a big ark<br>🌊 Saved from great flood<br>🐘 Took animals two by two<br>🌈 Jehovah gave him rainbow promise<br>⛰️ Ark landed on Mount Ararat" },
+                { name: "ABRAHAM", clue: "👴 Friend of Jehovah<br>⭐ Father of many nations<br>🏕️ Left his homeland<br>👼 Entertained three angels<br>🔥 Almost sacrificed Isaac" },
+                { name: "ISAAC", clue: "👶 Son Abraham almost sacrificed<br>😂 Name means 'laughter'<br>👵 Born when Sarah was old<br>💍 Married beautiful Rebecca<br>👥 Father of twins Jacob and Esau" },
+                { name: "JACOB", clue: "👶 Born holding brother's heel<br>🥣 Bought birthright with stew<br>🪜 Dreamed of ladder to heaven<br>🥊 Wrestled with an angel<br>🇮🇱 Name changed to Israel" },
+                { name: "JOSEPH", clue: "🌈 Had coat of many colors<br>🔮 Interpreted Pharaoh's dreams<br>🇪🇬 Became ruler in Egypt<br>👥 Sold by jealous brothers<br>🌾 Saved people from famine" },
+                { name: "MOSES", clue: "👶 Baby hidden in basket<br>🌊 Parted the Red Sea<br>📜 Received Ten Commandments<br>🔥 Saw burning bush<br>🏜️ Led people through wilderness" },
+                { name: "JOSHUA", clue: "⚔️ Great warrior leader<br>🏰 Made walls of Jericho fall<br>🌊 Crossed Jordan River<br>☀️ Made sun stand still<br>🗺️ Led into Promised Land" },
+                { name: "GIDEON", clue: "⚔️ Led 300 brave soldiers<br>🕯️ Used torches and trumpets<br>🐑 Put out fleece for Jehovah<br>👼 Angel called him mighty warrior<br>🌾 Was threshing wheat secretly" },
+                { name: "SAMSON", clue: "💪 Strongest man who ever lived<br>✂️ Power was in his long hair<br>🦁 Killed lion with bare hands<br>🏛️ Pushed down temple pillars<br>💔 Delilah cut his hair" },
+                { name: "RUTH", clue: "💕 Loyal daughter-in-law<br>👵 Took care of Naomi<br>🌾 Worked in barley fields<br>👰 Married kind man Boaz<br>👑 Great-grandmother of King David" },
+                { name: "DAVID", clue: "🐑 Young shepherd boy<br>🎵 Played harp beautifully<br>⚔️ Killed giant Goliath<br>👑 Became king of Israel<br>🎶 Wrote songs to Jehovah" },
+                { name: "SOLOMON", clue: "👑 Wisest king who ever lived<br>🏛️ Built beautiful temple<br>👶 Judged who real mother was<br>👸 Queen of Sheba visited him<br>💰 Very rich and famous" },
+                { name: "ELIJAH", clue: "🔥 Made fire come from heaven<br>🌧️ Stopped rain for three years<br>🏃 Could run very fast<br>🌪️ Went to heaven in whirlwind<br>🐦 Ravens brought him food" },
+                { name: "DANIEL", clue: "🦁 Thrown into lions' den<br>🔮 Explained king's dreams<br>👑 Served kings faithfully<br>🙏 Prayed to Jehovah three times daily<br>🔥 Friends survived fiery furnace" },
+                { name: "JONAH", clue: "🐟 Swallowed by big fish<br>🏃 Ran away from Jehovah<br>🌊 Thrown into stormy sea<br>🏙️ Preached to people of Nineveh<br>🌿 Sat under shade plant" },
+                { name: "JOB", clue: "😢 Lost everything he owned<br>🙏 Never stopped loving Jehovah<br>👹 Satan tested his faith<br>💪 Stayed faithful through troubles<br>🎁 Jehovah blessed him again" },
+                { name: "MARY", clue: "👼 Angel Gabriel visited her<br>👶 Mother of baby Jesus<br>✨ Had miraculous birth<br>⭐ Followed star to Bethlehem<br>💙 Treasured things in her heart" },
+                { name: "JESUS", clue: "👶 Son of Jehovah<br>🌟 Born in stable in Bethlehem<br>🌊 Walked on water<br>🍞 Fed 5000 people<br>🌳 Died on torture stake and was resurrected" },
+                { name: "JOHN BAPTIST", clue: "🌊 Baptized people in river<br>🦗 Ate locusts and wild honey<br>🏜️ Preached in the wilderness<br>👶 Cousin of Jesus<br>🕊️ Baptized Jesus" },
+                { name: "PETER", clue: "🎣 Was a fisherman<br>🌊 Walked on water to Jesus<br>🗝️ Given keys to kingdom<br>🐓 Denied knowing Jesus three times<br>⚡ Spoke on day of Pentecost" },
+                { name: "PAUL", clue: "⚡ Blinded by bright light<br>✈️ Traveled to many places<br>📜 Wrote letters to Christians<br>🏛️ Preached to kings and rulers<br>⛓️ Put in prison for preaching" }
+            ],
+            easyExtended: [
+                { name: "ENOCH", clue: "👨 Walked with Jehovah faithfully<br>🌤️ Never died - taken to heaven<br>🙏 Pleased Jehovah very much<br>👶 Had son named Methuselah<br>⬆️ Jehovah took him away alive" },
+                { name: "SARAH", clue: "👵 Abraham's beautiful wife<br>😂 Laughed when told she'd have baby<br>👶 Had Isaac when very old<br>⛺ Lived in tents<br>👸 Called a princess" },
+                { name: "REBECCA", clue: "💧 Drew water at the well<br>👰 Isaac's kind wife<br>🐪 Gave water to camels<br>👶 Mother of twin boys<br>💍 Wore beautiful jewelry" },
+                { name: "ESAU", clue: "👶 Born first but sold birthright<br>🏹 Great hunter<br>🥣 Traded birthright for stew<br>👥 Jacob's twin brother<br>🦌 Loved to hunt animals" },
+                { name: "RACHEL", clue: "🐑 Beautiful shepherdess<br>💕 Jacob worked 14 years for her<br>👰 Jacob's beloved wife<br>💧 Met Jacob at water well<br>👶 Mother of Joseph and Benjamin" },
+                { name: "LEAH", clue: "👀 Had weak eyes<br>👰 Jacob's first wife<br>👶 Mother of many sons<br>💔 Not loved as much as Rachel<br>👑 Mother of Judah the tribe leader" },
+                { name: "AARON", clue: "🎤 Helped Moses speak<br>👥 Moses' older brother<br>⚡ First high priest<br>🌿 His walking stick budded<br>🎺 Made golden calf" },
+                { name: "MIRIAM", clue: "👶 Watched baby Moses in basket<br>🥁 Led women in victory dance<br>👧 Moses' sister<br>🎵 Sang songs to Jehovah<br>💧 People had water because of her" },
+                { name: "CALEB", clue: "👁️ One of twelve spies<br>🍇 Brought back huge grapes<br>💪 Strong even when old<br>🏔️ Conquered mountains at age 85<br>🙌 Had faith Jehovah would help" },
+                { name: "DEBORAH", clue: "👩‍⚖️ Wise woman judge<br>🌴 Sat under palm tree<br>⚔️ Led Israel to victory<br>🎵 Sang victory song<br>💪 Very brave leader" },
+                { name: "HANNAH", clue: "🙏 Prayed to Jehovah for a baby<br>😭 Cried at Jehovah's house<br>👶 Promised to give son to Jehovah<br>👨‍⚖️ Mother of Samuel<br>🎵 Sang beautiful prayer" },
+                { name: "SAMUEL", clue: "👂 Heard Jehovah calling his name<br>👶 Served in Jehovah's house as boy<br>👨‍⚖️ Last judge of Israel<br>👑 Anointed first kings<br>🛡️ Led people faithfully" },
+                { name: "SAUL", clue: "👑 First king of Israel<br>📏 Head taller than everyone<br>😈 Disobeyed Jehovah's commands<br>🎯 Threw spears at David<br>😔 Lost Jehovah's blessing" },
+                { name: "JONATHAN", clue: "🏹 Brave prince and warrior<br>💕 David's best friend<br>🍯 Found honey in the forest<br>👑 King Saul's son<br>⚔️ Won battles with Jehovah's help" },
+                { name: "GOLIATH", clue: "👹 Giant Philistine warrior<br>📏 Over nine feet tall<br>🛡️ Wore heavy armor<br>⚔️ Challenged Israel's army<br>🪨 Killed by David's stone" },
+                { name: "BATHSHEBA", clue: "👸 Beautiful woman<br>💔 David saw her bathing<br>👶 Mother of Solomon<br>👑 Became queen of Israel<br>🏠 Lived in palace" },
+                { name: "ABSALOM", clue: "👨 David's handsome son<br>💇 Had very long beautiful hair<br>😡 Rebelled against his father<br>🌳 Hair got caught in tree<br>💔 Broke David's heart" },
+                { name: "ELISHA", clue: "👨‍⚕️ Elijah's faithful helper<br>🐻 Called bears to help him<br>🥄 Made iron axe head float<br>👨‍🦲 Was bald-headed<br>💧 Made bitter water sweet" },
+                { name: "NAAMAN", clue: "👨‍⚔️ Syrian army commander<br>🦠 Had terrible skin disease<br>🛁 Washed seven times in river<br>🌊 Dipped in Jordan River<br>😡 Got angry at simple cure" },
+                { name: "HEZEKIAH", clue: "👑 Good king of Judah<br>🙏 Prayed when enemies came<br>👼 Angel saved his city<br>🏛️ Cleaned Jehovah's temple<br>⏰ Jehovah made sun go backward" },
+                { name: "JOSIAH", clue: "👑 Young king who loved Jehovah<br>📜 Found Jehovah's law book<br>🔥 Destroyed false idols<br>👶 Became king when eight years old<br>🏛️ Repaired Jehovah's temple" },
+                { name: "ESTHER", clue: "👸 Beautiful Jewish queen<br>🎭 Hid her true identity<br>🛡️ Saved her people from death<br>🍽️ Made brave banquet plan<br>👑 Married King Ahasuerus" },
+                { name: "MORDECAI", clue: "👨‍👧 Esther's wise cousin<br>🛡️ Saved king from assassins<br>💪 Refused to bow to Haman<br>👑 Became important official<br>📜 Wrote letters to Jewish people" },
+                { name: "EZRA", clue: "📚 Priest who loved Jehovah's law<br>📖 Taught people Jehovah's word<br>👥 Led people back to Jerusalem<br>😭 Cried over people's sins<br>🏛️ Helped rebuild worship" },
+                { name: "NEHEMIAH", clue: "🧱 Rebuilt Jerusalem's walls<br>🍷 King's trusted cupbearer<br>😢 Cried when he heard about ruins<br>⚔️ Workers carried swords while building<br>🙏 Prayed to Jehovah before doing anything" },
+                { name: "JOHN", clue: "❤️ Disciple Jesus loved most<br>⚡ Called 'Son of Thunder'<br>👶 Stayed with Jesus when he died<br>🏝️ Wrote Bible book on island<br>🦅 Symbol is an eagle" },
+                { name: "MATTHEW", clue: "💰 Tax collector who followed Jesus<br>📝 Wrote first book about Jesus<br>🍽️ Made big feast for Jesus<br>👥 Left everything to follow Jesus<br>📊 Good at working with numbers" },
+                { name: "LUKE", clue: "👨‍⚕️ Doctor who loved Jesus<br>📝 Wrote book about Jesus<br>✈️ Traveled with Paul<br>👥 Interviewed many people<br>🔍 Carefully investigated everything" }
+            ], Jesus<br>🍽️ Made big feast for Jesus<br>👥 Left everything to follow Jesus<br>📊 Good at working with numbers" },
+                { name: "LUKE", clue: "👨‍⚕️ Doctor who loved Jesus<br>📝 Wrote book about Jesus<br>✈️ Traveled with Paul<br>👥 Interviewed many people<br>🔍 Carefully investigated everything" }
+            ],<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
